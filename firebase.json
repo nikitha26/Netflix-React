@@ -1,0 +1,6 @@
+{
+  "emulators": {},
+  "database": {
+    "rules": "database.rules.json"
+  }
+}
