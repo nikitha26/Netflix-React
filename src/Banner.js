@@ -23,11 +23,12 @@ function Banner() {
   return (
      <header className='banner'
       style={{
-        backgroundSize:'cover',
         backgroundImage:`url(
             "https://image.tmdb.org/t/p/w500/${movie?.poster_path}"
         )`,
-        backgroundPosition:'center center'
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        backgroundRepeat: 'no-repeat'
       }}
     >
       <div className='banner_contents'>
