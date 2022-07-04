@@ -1,7 +1,22 @@
+/* .banner_img .banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
 .banner{
     color: white;
     object-fit: contain;
     height: 448px;
+    /* image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast; */
 }
 
 .banner_contents{

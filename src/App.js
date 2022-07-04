@@ -3,10 +3,14 @@ import Row from "./Row";
 import Banner from './Banner';
 import Navbar from './Navbar';
 import requests from './requests';
+// import Home from "./Home";
+// import HomeNavbar from './HomeNavbar';
 
 function App() {
   return (
     <div className="App">
+      {/* <HomeNavbar/>
+      <Home/> */}
       <Navbar/>
       <Banner />
       <Row title="Netflix Originals" 

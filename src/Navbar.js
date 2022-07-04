@@ -24,11 +24,11 @@ function Navbar() {
         src='https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg'
         alt='nav_logo'
        />
-       <img
+       {/* <img
         className='nav_avatar'
         src='http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png'
         alt='avatar_logo'
-       />
+       /> */}
     </div>
   )
 }

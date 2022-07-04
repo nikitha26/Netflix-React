@@ -25,24 +25,23 @@ function Row({title, fetchUrl, isLargeRow}) {
     height: '390',
     width: '100%',
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
     },
   };
- const handleClick = (movie) => {
-   if(trailerUrl){
-     setTrailerUrl('')
-   }else {
-    movieTrailer(movie?.name || movie?.title || movie?.original_title || "")
-    .then((url) => {
-     // console.log("url is "+url);
-      //https://www.youtube.com/watch?v=XtMThy8QKqU&t=268s
-       const urlParams = new URLSearchParams(new URL(url).search);
-       setTrailerUrl(urlParams.get("v"));
-    })
-    .catch((error) => console.log(error))
-   }
- }
+  const handleClick = (movie) => {
+    if(trailerUrl){
+      setTrailerUrl('')
+    }else {
+      // console.log(movie);
+      movieTrailer(movie?.name || movie?.title || movie?.original_title || "")
+      .then((url) => {
+        //https://www.youtube.com/watch?v=XtMThy8QKqU&t=268s
+        const urlParams = new URLSearchParams(new URL(url).search);
+        setTrailerUrl(urlParams.get("v"));
+      })
+      .catch((error) => console.log(error))
+    }
+  }
   return (
     <div className='row'>
     <h1>{title}</h1>
