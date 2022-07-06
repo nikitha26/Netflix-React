@@ -36,8 +36,7 @@ function Banner() {
       if(trailerUrl){
         setTrailerUrl('')
       }else {
-       
-        movieTrailer(movie?.name || movie?.title || movie?.original_title || "")
+        movieTrailer(null ,{ tmdbId: movie.id })
         .then((url) => {
           //https://www.youtube.com/watch?v=XtMThy8QKqU&t=268s
           const urlParams = new URLSearchParams(new URL(url).search);
